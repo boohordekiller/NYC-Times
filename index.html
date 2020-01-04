@@ -104,25 +104,7 @@
 
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://api.nytimes.com/svc/search/v2"></script>
-  <script>
-    $('#searchArticle').on('click', function () {
-
-      // Constructing a queryURL 
-      var article = 'election';
-      var queryURL =
-        'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=' +
-        article +
-        '&api-key=URIJ9PYAdM878hp7H9l8ooVMKLlENwgp';
-
-      // Performing an AJAX request with the queryURL
-      $.ajax({
-        url: queryURL,
-        method: 'GET'
-      }).then(function (response) {
-        console.log(response);
-      });
+  
 =======
     
     <container>
@@ -211,59 +193,30 @@
 
     
     
-    
-    
-   
 
-    
-    <script src="https://api.nytimes.com/svc/search/v2"></script>
-    <script>
-      $(document).on('load', function() {
-
-        // Constructing a queryURL 
-        var queryURL =
-          'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=' +
-          article +
-          '&api-key=URIJ9PYAdM878hp7H9l8ooVMKLlENwgp';
-
-        // Performing an AJAX request with the queryURL
-        $.ajax({
-          url: queryURL,
-          method: 'GET'
-        })
 >>>>>>> 3d9c97bedda34c48b3ce7ba3e1e9c24d68910adc
-    });
-
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://api.nytimes.com/svc/search/v2"></script>
   <script>
-    $(document).on('load', function () {
+    $('#searchArticle').on('click', function () {
 
       // Constructing a queryURL 
-      var apiKey = 'URIJ9PYAdM878hp7H9l8ooVMKLlENwgp';
+      var article = 'election';
       var queryURL =
         'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=' +
         article +
-        '&api-key=' + apiKey;
+        '&api-key=URIJ9PYAdM878hp7H9l8ooVMKLlENwgp';
 
       // Performing an AJAX request with the queryURL
       $.ajax({
         url: queryURL,
         method: 'GET'
-      })
-    });
+      }).then(function (response) {
+        console.log(response);
+      });
+
+  </script>
+
 
   </script>
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
