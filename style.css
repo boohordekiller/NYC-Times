@@ -10,3 +10,11 @@ form {
     border: 1px solid gray;
     padding: 10px;
 }
+
+#boxHead {
+
+width: auto;
+height: 60px;
+background-color:lightgray;
+
+}
