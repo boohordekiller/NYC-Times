@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -60,3 +61,57 @@
     <script></script>
   </body>
 </html>
+=======
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <<<<<<< HEAD <script src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+    </script>
+
+
+    =======
+
+
+
+
+
+
+
+
+
+    <script src="https://api.nytimes.com/svc/search/v2"></script>
+    <script>
+      $(document).on('load', function () {
+
+        // Constructing a queryURL 
+        var apiKey = 'URIJ9PYAdM878hp7H9l8ooVMKLlENwgp';
+        var queryURL =
+          'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=' +
+          article +
+          '&api-key=' + apiKey;
+
+        // Performing an AJAX request with the queryURL
+        $.ajax({
+          url: queryURL,
+          method: 'GET'
+        })
+      });
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    >>>>>>> 725f2e69fc6521b72d154728e6612f3b13fcae05
+
+</body>
+
+</html>
+>>>>>>> f88db0d2d02e2bf0fb6e4f6881bca2fa941261df
