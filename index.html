@@ -13,6 +13,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
 
   <container>
 
@@ -122,6 +123,115 @@
       }).then(function (response) {
         console.log(response);
       });
+=======
+    
+    <container>
+    
+        <div class="row">
+
+            <div class="col-md-2"></div>
+                <div class="col-md-8">
+            <header class='jumbotron'>
+
+                <h1 id='announce'>PLACEHOLDER</h1>
+
+            </header>
+        </div>
+            <div class="col-md-2"></div>
+        </div>
+    </container>
+
+    <container>
+    
+        <div class="row">
+
+            <div class="col-md-2"></div>
+                <div class="col-md-8">
+            
+                    <div id='boxHead'></div id='boxHead'>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Search Term:</label>
+                            <input type="text" class="form-control" id="search-term">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlSelect1">Number of Records to Retrieve</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                              <option>7</option>
+                              <option>8</option>
+                              <option>9</option>
+                              <option>10</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1">Start Year (Optional):</label>
+                            <input type="text" class="form-control" id="start-year">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1">End Year (Optional):</label>
+                            <input type="text" class="form-control" id="end-year">
+                          </div>
+                        <div>
+                          <button type="button" class="btn btn-primary" id="search">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Search
+                          </button>
+                          <button type="button" class="btn btn-primary" id="clear">Clear Results</button>
+                        </div>
+                      </form>
+
+
+                </div>
+            <div class="col-md-2"></div>
+        </div>
+
+
+
+    </container>
+<br>
+    <container>
+    
+        <div class="row">
+
+            <div class="col-md-2"></div>
+                <div class="col-md-8">
+      
+                    <div id='boxHead'></div>
+
+                    <div id="articles-go-here"></div>
+              </div>
+            <div class="col-md-2"></div>
+        </div>
+    </container>
+
+    
+    
+    
+    
+   
+
+    
+    <script src="https://api.nytimes.com/svc/search/v2"></script>
+    <script>
+      $(document).on('load', function() {
+
+        // Constructing a queryURL 
+        var queryURL =
+          'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=' +
+          article +
+          '&api-key=URIJ9PYAdM878hp7H9l8ooVMKLlENwgp';
+
+        // Performing an AJAX request with the queryURL
+        $.ajax({
+          url: queryURL,
+          method: 'GET'
+        })
+>>>>>>> 3d9c97bedda34c48b3ce7ba3e1e9c24d68910adc
     });
 
   </script>
